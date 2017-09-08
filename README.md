@@ -17,9 +17,9 @@ SQL 기본 문법
   > 트랜잭션의 성격을 제어하는 것으로서 SET TRANSACTION, COMMIT, ROLLBACK, SAVEPOINT와 같은 종류가 있다. PL/SQL 모듈에서는 DCL을 사용할 수 있고 DCL을 이용하여 모듈의 트랜잭션을 제어 할 수 있다.
 
 ### 1. 테이블 생성
->CRETAE TABLE 테이블명 (
->	`칼럼이름 1` 칼럼타입 옵션1 옵션2,
->	`칼럼이름 2` 칼럼타입,
+>CRETAE TABLE 테이블명 (<br>
+>	`칼럼이름 1` 칼럼타입 옵션1 옵션2,<br>
+>	`칼럼이름 2` 칼럼타입,<br>
 >	`칼럼이름 3` 칼럼타입
 >);
 
@@ -33,7 +33,8 @@ CREATE TABLE memo (
 ```
 
 ### 2. 데이터 삽입
-> INSERT INTO 테이블명(칼럼명...) VALUES( 값 ...);
+> INSERT INTO 테이블명(칼럼명...)<br>
+> VALUES( 값 ...);
 
 ```SQL
 INSERT INTO memo(name, content, datetime)
@@ -41,8 +42,8 @@ VALUES('이흥기', '안녕하세요', now());
 ```
 
 ### 3. 데이터 조회
-> SELECT 조회할 칼럼명...
-> FROM 테이블명
+> SELECT 조회할 칼럼명...<br>
+> FROM 테이블명<br>
 > WHERE 조건...
 
 ```SQL
@@ -53,8 +54,8 @@ AND name LIKE '%흥%'
 ```
 
 ### 4. 데이터 수정
-> UPDATE 테이블명
-> SET 변경할칼럼1 = '변경값', 변경할칼럼2 = '변경값'
+> UPDATE 테이블명<br>
+> SET 변경할칼럼1 = '변경값', 변경할칼럼2 = '변경값'<br>
 > WHERE 조건절...;
 
 ```SQL
@@ -64,7 +65,7 @@ WHERE no= 1;
 ```
 
 ### 5. 데이터 삭제
-> DELETE FROM 테이블명
+> DELETE FROM 테이블명<br>
 > WHERE 조건절;
 
 ```SQL
