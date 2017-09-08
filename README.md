@@ -26,9 +26,9 @@ SQL 기본 문법
 ```SQL
 CREATE TABLE memo (
 	`no` int primary key not null auto_increment,
-    `name` varchar(100),
-    `content` text,
-    `datetime` datetime
+	`name` varchar(100),
+	`content` text,
+	`datetime` datetime
 );
 ```
 
@@ -48,8 +48,8 @@ VALUES('이흥기', '안녕하세요', now());
 ```SQL
 SELECT *
 FROM memo
-WHERE NO = 3
-AND NAME LIKE '%흥%'
+WHERE no = 3
+AND name LIKE '%흥%'
 ```
 
 ### 4. 데이터 수정
